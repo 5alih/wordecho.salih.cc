@@ -22,7 +22,13 @@ div{
 
 code{
 	font-size: 18px;
-	background-color: #000;
+	/* background-color: #000; */
+}
+
+box{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 colored{
@@ -34,7 +40,7 @@ a{
 }
 
 img{
-	width: 1000px;
+	width: 100%;
 }
 
 .withdropshadow{

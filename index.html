@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordEcho</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      padding: 5px;
+      margin: 10px 0;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: monospace;
+    }
+    .license {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style> -->
+</head>
+<body>
+<div>
+
+	<header>
+		<h1>WordEcho</h1>
+		<p>Application to read in your target language, instantly save unfamiliar words, and review them later with a spaced repetition system. Build your vocabulary naturally while enjoying immersive reading.</p>
+	</header>
+	
+	<main>
+		<section>
+			<h2>Usage</h2>
+			
+			<h3>1. First Launch</h3>
+      <img class="nodropshadow" src="image-1.png" alt="First Launch">
+
+      <h3>2. Select Your Target Language</h3>
+      <p>For this example, let's say you select German.</p>
+      <img class="nodropshadow" src="image-2.png" alt="Select Target Language">
+	  
+      <h3>3. Press the Circular Plus Icon</h3>
+      <p>For better visibility, switch to fullscreen. This page allows you to add new texts in your target language.</p>
+      <img class="withdropshadow" src="image-4.png" alt="Add New Texts">
+      <p>Simply enter a title and the page content. You can find the text used here: 
+		  <a href="https://lingua.com/german/reading/freizeitgestaltung/">Lingua German Reading</a>.
+		  After pasting the text, press <strong>SAVE</strong> and then <strong>EXIT</strong> to return to the starting page.
+		</p>
+		<img class="withdropshadow" src="image-5.png" alt="Save and Exit">
+		
+		<h3>4. Select the Text You Want to Read</h3>
+		<p>In this case, you only have one text to choose from, but you can add as many texts as you want.</p>
+		<img class="withdropshadow" src="image-6.png" alt="Select Text">
+		<p>After selecting a text, the reading page will open. On this page, you’ll see the text on the left and a sidebar on the right. All words are saved to your vocabulary. To update the state of a word, simply click on it.</p>
+		<img class="withdropshadow" src="image-7.png" alt="Reading Page">
+		<p>After clicking the word "und," the selected word appears on the sidebar, and the dictionary displays translations for the selected word. For further clarification, you can click the links under the dictionary to open different translation websites.</p>
+		<img class="withdropshadow" src="image-9.png" alt="Dictionary Translations">
+		<p>After entering the meaning of the word, you can add it to "seen words" or mark it as "known." Adding a word to "seen words" means you don’t know the word yet but have encountered it. These words can be reviewed later using a spaced repetition system, so it’s important to add words you want to practice. Marking a word as "known" ensures the application doesn’t show it during review sessions, as it’s considered a word you already know.</p>
+		<p>You can always change the state of words by clicking the other button or delete the word entirely from your vocabulary on the vocabulary page (covered later).</p>
+		<p>Here, the word has been added to "seen words," and its color changes from silver to white, indicating that it is no longer a new word.</p>
+		<img class="withdropshadow" src="image-10.png" alt="Seen Words">
+		
+		<h3>5. Go to the VOCAB Page</h3>
+		<p>At this point, you’ve saved the first sentence. You marked names and the word "kilometer" as known because you don’t need to learn them. For other words, you added them to "seen words." Here, you can see that "seen words" have different values like <strong>Level</strong>, <strong>Haze</strong>, and <strong>Days</strong>:</p>
+		<ul>
+			<li><strong>Level</strong>: How well you know the word.</li>
+			<li><strong>Haze</strong>: How difficult it is for you to remember the word.</li>
+			<li><strong>Days</strong>: How many days remain until you need to review the word again.</li>
+		</ul>
+		<p>Since you just saved the words, they need to be reviewed immediately.</p>
+		<img class="withdropshadow" src="image-11.png" alt="Vocab Page">
+		
+		<h3>6. Go to the STUDY Page</h3>
+		<p>On this page, you review your words to practice and learn them. When you first open the page, you’ll see your first word at the top and a button at the bottom to show the meaning of the word. Before showing the answer, try to recall the meaning of the word.</p>
+		<img class="withdropshadow" src="image-12.png" alt="Study Page">
+		<p>After clicking the button, you can see the saved meaning under the word. Below, there are four buttons to indicate how hard it was to recall the word:</p>
+		<ul>
+			<li>If it was easy, click <strong>EASY</strong>.</li>
+			<li>If it was not so easy, click <strong>GOOD</strong>.</li>
+			<li>If it was difficult, click <strong>HARD</strong>.</li>
+			<li>If you couldn’t recall the word, click <strong>CAN’T</strong>.</li>
+		</ul>
+		<p>These buttons help the application optimize the review schedule.</p>
+		<img class="withdropshadow" src="image-13.png" alt="Review Buttons">
+		<p>After reviewing the remaining words, you can see stats about the words you’re learning. Words you recalled easily now have a higher <strong>Level</strong>, and the <strong>Haze</strong> of every word is lower because you’ve studied them once. The <strong>Days</strong> column now shows that there is 1 day remaining until the next review. The due date is the same for all words initially but will vary over time as the application fine-tunes the review schedule.</p>
+		<img class="withdropshadow" src="image-15.png" alt="Review Stats">
+    </section>
+	
+    <section>
+		<h2>Installation</h2>
+		<p>You can find ready-to-use packages in the release section.</p>
+		<p>If you want to build this project yourself:</p>
+		<code class="bash">
+			<colored>git</colored> clone https://github.com/WordEcho/WordEcho.git
+			<br>
+			<colored>cd</colored> WordEcho
+			<br>
+			<colored>npm</colored> install
+			<br>
+			<colored>npm</colored> install --global @tauri-apps/cli
+			<br>
+			<colored>npm</colored> run tauri build
+		</code>
+		<p>More information can be found at: <a href="https://tauri.app/">Tauri App</a>.</p>
+    </section>
+	
+    <section>
+		<h2>License</h2>
+		<p class="license">WordEcho is licensed under the Attribution-NonCommercial 4.0 International</p>
+    </section>
+</main>
+
+<footer>
+	<p>&copy; 2025 WordEcho. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>

@@ -57,6 +57,7 @@
       margin-top: 0px;
     }
     .key-box input {
+      visibility: hidden;
       padding: 0px;
       font-size: 0em;
       /* border: 1px solid #ccc; */
@@ -227,7 +228,6 @@
       const input = button.parentElement.querySelector('input');
       input.select();
       document.execCommand('COPY');
-      alert('Copied to clipboard: ' + input.value);
     }
   </script>
 </body>
